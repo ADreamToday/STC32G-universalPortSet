@@ -1,4 +1,8 @@
 # STC32G-universalPortSet
+<br>
+请看超级简简简的教程↓<br>
+【如何使用我写的UniversalPortSet库】<br> 
+<a herf="https://www.bilibili.com/video/BV1gb411f7se/?share_source=copy_web&vd_source=11b2c530b05a67e16cc889f26e428cdd">B站视频链接</a><br>
 （随手写的readme）<br>
 将stc32G12k128的60个io口的pwm和数字输出全部抽象成结构体，这样就可以将“io口”当变量传入自定义函数（建议传地址）<br>
 （一下的xx代表一个两位数，你懂的）<br>
