@@ -2,8 +2,11 @@
 （随手写的readme）<br>
 将stc32G12k128的60个io口的pwm和数字输出全部抽象成结构体，这样就可以将“io口”当变量传入自定义函数（建议传地址）<br>
 （一下的xx代表一个两位数，你懂的）<br>
-数字输入输出使用方法： UPxx.digitalWrite(value);  [input =]UPxx.digitalRead();<br>
-pwm输出则写成了成员变量 ：UPxx.pwm_value = value;<br>
+数字输入输出使用方法： <br>
+UPxx.digitalWrite(value); <br>
+[input =]UPxx.digitalRead();<br>
+pwm输出则写成了成员变量 ：<br>
+UPxx.pwm_value = value;<br>
 (当然，使用前需要自己设置端口输出模式)<br>
 -----------------
 在head文件中有60个io的宏定义<br>
