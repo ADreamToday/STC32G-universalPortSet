@@ -37,6 +37,7 @@ void UPS_init()
 	TH0 = 0xff;		//同上
 	TR0 = 1;				//start timer0
 	ET0 = 1;				//enable interrupt1
+	EA = 1;
 }
 	
 //========用于pwm的终端函数==============
