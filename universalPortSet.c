@@ -12,7 +12,32 @@
 	#define _uport_
 	#include"universalPortSet.h"
 #endif
-
+void UPS_init()
+{
+	P0M0 = 0x00;
+	P0M1 = 0x00;
+	P1M0 = 0x00;
+	P1M1 = 0x00;
+	P2M0 = 0x00;
+	P2M1 = 0x00;
+	P3M0 = 0x00;
+	P3M1 = 0x00;
+	P4M0 = 0x00;
+	P4M1 = 0x00;
+	P5M0 = 0x00;
+	P5M1 = 0x00;
+	P6M0 = 0x00;
+	P6M1 = 0x00;
+	P7M0 = 0x00;
+	P7M1 = 0x00;
+	
+	TMOD = 0x10;
+	
+	TL0 = 0xcc;		//根据实际修改
+	TH0 = 0xff;		//同上
+	TR0 = 1;				//start timer0
+	ET0 = 1;				//enable interrupt1
+}
 	
 //========用于pwm的终端函数==============
 void _UPS_pwm_interrupt() interrupt 1

@@ -8,33 +8,35 @@
 //#define _UPxx_			使用这样的宏定义来启用某个端口的统一定义功能
 //#define _UPxx_pwm_	使用这种定义来开启pwm功能(单向输出)
 	
+extern void UPS_init();
+	
 //================启用U端口=============
 //#define _UP00_    
 //#define _UP00_pwm_
 
-#define _UP01_    
-#define _UP01_pwm_
+//#define _UP01_    
+//#define _UP01_pwm_
 
-#define _UP02_    
-#define _UP02_pwm_
+//#define _UP02_    
+//#define _UP02_pwm_
 
 //#define _UP03_    
 //#define _UP03_pwm_
 
-#define _UP04_    
-#define _UP04_pwm_
+//#define _UP04_    
+//#define _UP04_pwm_
 
 //#define _UP05_    
 //#define _UP05_pwm_
 
-#define _UP06_    
-#define _UP06_pwm_
+//#define _UP06_    
+//#define _UP06_pwm_
 
 //#define _UP07_
 //#define _UP07_pwm_
 
-#define _UP10_
-#define _UP10_pwm_
+//#define _UP10_
+//#define _UP10_pwm_
 
 //#define _UP11_
 //#define _UP11_pwm_
@@ -93,14 +95,14 @@
 //#define _UP33_
 //#define _UP33_pwm_
 
-#define _UP34_
-#define _UP34_pwm_
+//#define _UP34_
+//#define _UP34_pwm_
 
-#define _UP35_
-#define _UP35_pwm_
+//#define _UP35_
+//#define _UP35_pwm_
 
-#define _UP36_
-#define _UP36_pwm_
+//#define _UP36_
+//#define _UP36_pwm_
 
 //#define _UP37_
 //#define _UP37_pwm_
@@ -120,8 +122,8 @@
 //#define _UP44_
 //#define _UP44_pwm_
 
-#define _UP45_
-#define _UP45_pwm_
+//#define _UP45_
+//#define _UP45_pwm_
 
 //#define _UP46_
 //#define _UP46_pwm_
@@ -141,8 +143,8 @@
 //#define _UP53_
 //#define _UP53_pwm_
 
-#define _UP54_
-#define _UP54_pwm_
+//#define _UP54_
+//#define _UP54_pwm_
 
 //#define _UP55_
 //#define _UP55_pwm_
