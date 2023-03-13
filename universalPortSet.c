@@ -12,6 +12,14 @@
 	#define _uport_
 	#include"universalPortSet.h"
 #endif
+
+#ifndef _pwm_H8_
+  #define _pwm_H8_ 0xff
+#endif
+#ifndef _pwm_L8_
+  #define _pwm_L8_ 0xcc
+#endif
+
 void UPS_init()
 {
 	P0M0 = 0x00;
@@ -33,8 +41,8 @@ void UPS_init()
 	
 	TMOD = 0x10;
 	
-	TL0 = 0xcc;		//根据实际修改
-	TH0 = 0xff;		//同上
+	TL0 = _pwm_L8_;		//根据实际修改
+	TH0 = _pwm_H8_;		//同上
 	TR0 = 1;				//start timer0
 	ET0 = 1;				//enable interrupt1
 	EA = 1;

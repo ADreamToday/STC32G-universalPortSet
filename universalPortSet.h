@@ -4,12 +4,17 @@
 #endif
 	
 //#define _ban_Udelay_func		//用来禁用定义的延时函数
-	
+
+//说明
 //#define _UPxx_			使用这样的宏定义来启用某个端口的统一定义功能
 //#define _UPxx_pwm_	使用这种定义来开启pwm功能(单向输出)
 	
 extern void UPS_init();
-	
+
+//设置pwm最小周期
+#define _pwm_H8_ 0xff
+#define _pwm_L8_ 0xcc
+
 //================启用U端口=============
 //#define _UP00_    
 //#define _UP00_pwm_
